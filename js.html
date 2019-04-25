@@ -1,0 +1,30 @@
+<script>
+  function onFailure(error) {
+    google.script.run.alertError(error);
+  }
+
+function showNeat(neated){
+  var html = "<h1 class=\"output-result\">"+neated+"</h1>";  
+  document.getElementById("output-container").innerHTML = html;
+}
+ 
+
+function processNeatingSolicit(formObject) {
+  var inputedNumber = formObject.usrnumber.value;
+  var formatting = formObject.formatting.value;
+  if (formatting == "dotcomma") {        
+    google.script.run.withSuccessHandler(showNeat)
+    .neat(inputedNumber,".",",");
+  } else {
+    google.script.run.withSuccessHandler(showNeat)
+    .neat(inputedNumber,",",".");
+  }
+}
+
+
+function handleMenuFormSubmit(formObject) {
+  processNeatingSolicit(formObject);
+}
+</script>
+
+

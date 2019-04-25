@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+      <?!= include('stylesheet'); ?>
+      <?!= include('js'); ?>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div id="form-container">
+      <form id="input" onsubmit="handleMenuFormSubmit(this);">
+        <div class="formating-options">
+          <h2>Choose the formatting:</h2>
+            <input type="radio" id="dotcomma" name="formatting" value="dotcomma">
+            <label for="dotcomma">
+              <span class="fmt-sign">"."</span> for thousands, 
+              <span class="fmt-sign">","</span> for decimals</label> <br>
+            <input type="radio" id="commadot" name="formatting" value="commadot">
+              <label for="commadot">
+                <span class="fmt-sign">","</span> for thousands, 
+                <span class="fmt-sign">"."</span> for decimals
+              </label>            
+        </div>
+        <p>Insert number:</p>
+        <input type="text" name="usrnumber" />
+        <div class="submit-bttn-container">
+          <input type="submit" value="Submit" id="submitButton"/>
+        </div>   
+      </form>
+    </div>
+    <div id="output-container">
+   
+    </div>
+</body>
+</html>
+
