@@ -5,3 +5,6 @@ Some numbers where bigger than 999, some much bigger, and they were displayed cl
 
 That's where the idea of neatnumbersgs came in, as a way to display numbers with any favorite thousands or decimal separators.
 
+The stuff that matters is in the [neat_file](/neat.gs)
+You make your copy and see it in action [Here](https://docs.google.com/spreadsheets/d/13qBFowy1jCazrNwwRSGOZap-aRqwtmOPQjHSUvQdx00/edit?usp=sharing)
+
