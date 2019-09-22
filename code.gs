@@ -16,8 +16,8 @@ function openMenuDialog() {
 function getMenu() {
   return HtmlService.createTemplateFromFile("menu") 
     .evaluate()
-    .setHeight(600)
-    .setWidth(600);
+    .setHeight(300)
+    .setWidth(400);
 }
 
 
